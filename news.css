@@ -1,0 +1,287 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a{
+    color: #fff;
+}
+
+h1 a:hover{
+    text-decoration: none;
+    color: #cfcfcf;
+}
+
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+.header_nav{
+    align-items: center;
+}
+.header_nav ul {
+    display: flex;
+}
+
+.header_nav li {
+    margin-left: 3rem;
+}
+
+.header_nav a {
+    font-size: 1.2rem;
+}
+
+.header_nav ul li a{
+    color: #eee;
+}
+
+.search-bar {
+    margin-top: 10px;
+}
+
+.search-bar form {
+    margin-left: auto;
+    display: flex;
+}
+
+.search-bar input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+    border: none;
+}
+
+.search-bar button[type="submit"] {
+    padding: 0.5rem;
+    background-color: #ccc;
+    border: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.search-bar button[type="submit"]:hover {
+    background-color: #9b9797;
+}
+
+/* Main styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+#main_headline{
+  margin-bottom: 10px;
+  text-decoration: underline;
+  text-decoration-color: red;
+}
+.elonImage{
+  margin-top: 10px;
+}
+h1{
+  font-weight: bold;
+}
+.heading h3{
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.content1,.content2{
+  width: 50rem;
+  text-align: justify;
+}
+.features{
+  height: 200px;
+  width: 100%;
+}
+/*Column style*/
+.column{
+  display: flex;
+  flex-direction: row;
+}
+.left-column{
+  margin-right: 10px;
+  flex: 1;
+  padding: 20px;
+  background-color: #F2F2F2;
+}
+.right-column{
+  margin-left: 10px;
+  flex: 1;
+  padding: 20px;
+  background-color: #E6E6E6;
+}
+#AI_image{
+  width:800px;
+}
+h3 a{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #333;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div{
+    flex-grow: 1;
+    padding-left: 10%;
+}
+
+footer h2{
+    color: #eee;
+    margin-bottom: 10px;
+}
+
+.footer_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer_container .fcontainer{
+  display: inline-block;
+  margin: auto 10rem auto 10rem;
+}
+footer nav ul li{
+    margin-bottom: 5px;
+}
+
+footer nav ul li a{
+    color: #eee;
+}
+
+.contact-info {
+    margin-left: auto;
+    color: #eee;
+    margin-right: 10%;
+}
+
+.contact-info p {
+    margin: 5px;
+}
+
+footer>p {
+    text-align: center;
+    color: #eee;
+}
+footer>h2{
+  text-align: center;
+}
+/*Media Query For Mobile View*/
+@media(max-width:600px) {
+  #pagecontainer{
+    display: grid;
+    width: 100%;
+  }
+  header{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer{
+    width: 100%;
+
+  }
+  .footer_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 150px;
+  }
+.fcontainer{
+  padding: 20px 0 20px 0;
+}
+  main{
+    padding: 1rem;
+  }
+.body{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+  .logo{
+    margin-top: 20px;
+  }
+
+  .header_nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .search-bar{
+    margin-bottom: 20px;
+  }
+.left-column{
+  width: 100%;
+  margin: auto 20px; auto 20px;
+}
+  .left-column,.right-column{
+    width: 100%;
+    padding: 0;
+  }
+.column{
+  flex-direction: column;
+}
+  .elonImage{
+    width: 100%;
+  }
+
+  #AI_image{
+    width: 100%;
+    height: auto;
+  }
+
+  h1{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  p{
+    font-size: 16px;
+  }
+  .features{
+    width: 100%;
+  }
+
+  /*column style for mobile view*/
+  .column{
+    display: grid;
+   }
+}
